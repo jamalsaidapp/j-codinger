@@ -5,7 +5,7 @@
         <div class="topbar_inner">
           <div class="logo">
             <router-link to="/">
-              <img src="../assets/img/logo/logo.png" alt="partners brand" />
+              <img src="../assets/img/logo/logo-light.png" alt="partners brand" />
             </router-link>
           </div>
           <!-- End logo -->
@@ -17,18 +17,18 @@
               :duration="100"
               :alwaysTrack="true"
             >
-              <a href="#home" class="scrollactive-item">Home</a>
-              <a href="#about" class="scrollactive-item">About</a>
-              <a href="#portfolio" class="scrollactive-item">Portfolio</a>
-              <a href="#news" class="scrollactive-item">News</a>
+              <a href="#home" class="scrollactive-item">Accueil</a>
+              <a href="#about" class="scrollactive-item">À Propos</a>
+              <a href="#portfolio" class="scrollactive-item">Portefeuille</a>
+              <a href="#news" class="scrollactive-item">Actualités</a>
               <a href="#contact" class="scrollactive-item">Contact</a>
               <a
                 class="white-fill-bg btn-outline btn_sm"
                 target="_blank"
                 rel="noreferrer"
-                href="#"
+                href="mailto:contact@j-codinger.com"
               >
-                Buy Now
+                Demender Un Devis
               </a>
             </scrollactive>
           </div>
@@ -46,7 +46,7 @@
             <div class="logo">
               <router-link to="/">
                 <img
-                  src="../assets/img/logo/new/dark.png"
+                  src="../assets/img/logo/logo-dark.png"
                   alt="partners brand"
                 />
               </router-link>
@@ -76,29 +76,30 @@
             class="close_menu"
             @click="active = !active"
             :aria-pressed="active ? 'true' : 'false'"
+            style="cursor: pointer;"
           >
-            close
+            ✘
           </span>
           <div class="dropdown_inner">
             <ul class="anchor_nav">
               <li class="current">
                 <a href="#home" @click="active = !active">
-                  Home
+                  Accueil
                 </a>
               </li>
               <li>
                 <a href="#about" @click="active = !active">
-                  About
+                  À Propos
                 </a>
               </li>
               <li>
                 <a href="#portfolio" @click="active = !active">
-                  Portfolio
+                  Portefeuille
                 </a>
               </li>
               <li>
                 <a href="#news" @click="active = !active">
-                  News
+                  Actualités
                 </a>
               </li>
               <li>
@@ -111,9 +112,9 @@
                   class="white-fill-bg btn-outline btn_sm"
                   target="_blank"
                   rel="noreferrer"
-                  href="https://themeforest.net/"
+                  href="mailto:contact@j-codinger.com"
                 >
-                  Buy Now
+                  Demender Un Devis
                 </a>
               </li>
             </ul>

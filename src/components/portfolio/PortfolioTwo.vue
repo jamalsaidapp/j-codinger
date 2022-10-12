@@ -7,8 +7,8 @@
       <div class="shane_tm_title">
         <div class="title_flex">
           <div class="left">
-            <span>Portfolio</span>
-            <h3>Creative Portfolio</h3>
+            <span>Portefeuille</span>
+            <h3> Mes Projets </h3>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@
             <a
               v-on:click="activetab = 1"
               :class="[activetab === 1 ? 'active' : '']"
-              >All</a
+              >Tous</a
             >
           </li>
           <!-- End All for tabcontent 1 -->
@@ -27,7 +27,7 @@
             <a
               v-on:click="activetab = 2"
               :class="[activetab === 2 ? 'active' : '']"
-              >Vimeo</a
+              >CRM</a
             >
           </li>
           <!-- End Vimeo tabcontent 2 -->
@@ -35,7 +35,7 @@
             <a
               v-on:click="activetab = 3"
               :class="[activetab === 3 ? 'active' : '']"
-              >Youtube</a
+              >Landing Websites</a
             >
           </li>
           <!-- End .Youtube tabcontent 3 -->
@@ -43,7 +43,7 @@
             <a
               v-on:click="activetab = 4"
               :class="[activetab === 4 ? 'active' : '']"
-              >Gallery</a
+              >Mobile Apps</a
             >
           </li>
           <!-- End Mix tabcontent 4 -->
@@ -60,7 +60,7 @@
           <li v-for="(image, imageIndex) in allItems" :key="imageIndex">
             <div class="inner" @click="index = imageIndex">
               <div class="entry shane_tm_portfolio_animation_wrap">
-                <img class="image" :src="image.thumb" alt="Portfolio" />
+                <img class="image" :src="image.src" alt="Portfolio" />
               </div>
               <!-- End .entry -->
               <div class="mobile_title">
@@ -81,15 +81,15 @@
       <div class="portfolio_list">
         <ul>
           <CoolLightBox
-            :items="vimeoItems"
+            :items="crm"
             :index="index"
             @close="index = null"
           >
           </CoolLightBox>
-          <li v-for="(image, imageIndex) in vimeoItems" :key="imageIndex">
+          <li v-for="(image, imageIndex) in crm" :key="imageIndex">
             <div class="inner" @click="index = imageIndex">
               <div class="entry tokyo_tm_portfolio_animation_wrap">
-                <img class="image" :src="image.thumb" alt="Portfolio" />
+                <img class="image" :src="image.src" alt="Portfolio" />
               </div>
               <!-- End .entry -->
               <div class="mobile_title">
@@ -109,15 +109,15 @@
       <div class="portfolio_list">
         <ul>
           <CoolLightBox
-            :items="youtubeItems"
+            :items="landing"
             :index="index"
             @close="index = null"
           >
           </CoolLightBox>
-          <li v-for="(image, imageIndex) in youtubeItems" :key="imageIndex">
+          <li v-for="(image, imageIndex) in landing" :key="imageIndex">
             <div class="inner" @click="index = imageIndex">
               <div class="entry tokyo_tm_portfolio_animation_wrap">
-                <img class="image" :src="image.thumb" alt="Portfolio" />
+                <img class="image" :src="image.src" alt="Portfolio" />
               </div>
               <!-- End .entry -->
               <div class="mobile_title">
@@ -137,16 +137,16 @@
       <div class="portfolio_list">
         <ul>
           <CoolLightBox
-            :items="galleryItems"
+            :items="mobile"
             :index="index"
             @close="index = null"
           >
           </CoolLightBox>
 
-          <li v-for="(image, imageIndex) in galleryItems" :key="imageIndex">
+          <li v-for="(image, imageIndex) in mobile" :key="imageIndex">
             <div class="inner" @click="index = imageIndex">
               <div class="entry tokyo_tm_portfolio_animation_wrap">
-                <img class="image" :src="image.thumb" alt="Portfolio" />
+                <img class="image" :src="image.src" alt="Portfolio" />
               </div>
               <!-- End .entry -->
               <div class="mobile_title">
@@ -169,105 +169,49 @@ export default {
   data() {
     return {
       activetab: 1,
-      allItems: [
+      allItems: [],
+      crm: [
         {
-          src: "https://vimeo.com/43338103",
-          thumb: require("../../assets/img/portfolio/13.jpg"),
-          portfolioName: "My Song",
-          portfolioType: "Vimeo",
+          src: require("../../assets/img/portfolio/CRM_1.png"),
+          portfolioName: "LG CRM",
+          portfolioType: "CRM",
         },
         {
-          src: require("../../assets/img/portfolio/14.jpg"),
-          thumb: require("../../assets/img/portfolio/14.jpg"),
-          portfolioName: "Fashion Memory",
-          portfolioType: "Gallery",
-        },
-        {
-          src: require("../..//assets/img/portfolio/15.jpg"),
-          thumb: require("../../assets/img/portfolio/15.jpg"),
-          portfolioName: "Childhood Memory",
-          portfolioType: "Gallery",
-        },
-        {
-          src: "https://youtu.be/ZOoVOfieAF8",
-          thumb: require("../../assets/img/portfolio/24.jpg"),
-          portfolioName: "My Hits",
-          portfolioType: "Youtube",
-        },
-        {
-          src: "https://youtu.be/ZOoVOfieAF8",
-          thumb: require("../..//assets/img/portfolio/11.jpg"),
-          portfolioName: "University Life",
-          portfolioType: "Youtube",
-        },
-        {
-          src: require("../..//assets/img/portfolio/16.jpg"),
-          thumb: require("../..//assets/img/portfolio/16.jpg"),
-          portfolioName: "Beautiful Memory",
-          portfolioType: "Gallery",
+          src: require("../../assets/img/portfolio/CRM_2.png"),
+          portfolioName: "Gestion Parc",
+          portfolioType: "CRM",
         },
       ],
-      vimeoItems: [
+      landing: [
         {
-          src: "https://vimeo.com/43338103",
-          thumb: require("../../assets/img/portfolio/13.jpg"),
-          portfolioName: "My Sound",
-          portfolioType: "Vimeo",
+          src: require("../../assets/img/portfolio/LANDING_1.png"),
+          portfolioName: "Nomatis.com",
+          portfolioType: "Landing Websites",
         },
         {
-          src: "https://vimeo.com/176916362",
-          thumb: require("../../assets/img/portfolio/22.jpg"),
-          portfolioName: "Old is Gold",
-          portfolioType: "Vimeo",
+          src: require("../../assets/img/portfolio/LANDING_2.png"),
+          portfolioName: "Macrocom.ma",
+          portfolioType: "Landing Websites",
         },
       ],
-      youtubeItems: [
+      mobile: [
         {
-          src: "https://youtu.be/YlBTaj0cXQY",
-          thumb: require("../../assets/img/portfolio/15.jpg"),
-          portfolioName: "Behance Design",
-          portfolioType: "Youtube",
+          src: require("../../assets/img/portfolio/MOBILE_1.jpg"),
+          portfolioName: "Landing Websites",
+          portfolioType: "Mobile Apps",
         },
         {
-          src: "https://youtu.be/ZOoVOfieAF8",
-          thumb: require("../../assets/img/portfolio/24.jpg"),
-          portfolioName: "Themeforest Design",
-          portfolioType: "Youtube",
-        },
-      ],
-      mixItems: [
-        {
-          src: require("../../assets/img/portfolio/2.jpg"),
-          thumb: require("../../assets/img/portfolio/2.jpg"),
-        },
-        {
-          src: "https://youtu.be/ZOoVOfieAF8",
-          thumb: require("../../assets/img/portfolio/14.jpg"),
-        },
-      ],
-      galleryItems: [
-        {
-          src: require("../../assets/img/portfolio/11.jpg"),
-          thumb: require("../../assets/img/portfolio/11.jpg"),
-          portfolioName: "Beautiful Memory",
-          portfolioType: "Gallery",
-        },
-        {
-          src: require("../../assets/img/portfolio/14.jpg"),
-          thumb: require("../../assets/img/portfolio/14.jpg"),
-          portfolioName: "Childhood Memory",
-          portfolioType: "Gallery",
-        },
-        {
-          src: require("../../assets/img/portfolio/16.jpg"),
-          thumb: require("../../assets/img/portfolio/16.jpg"),
-          portfolioName: "University Lift",
-          portfolioType: "Gallery",
+          src: require("../../assets/img/portfolio/MOBILE_2.jpg"),
+          portfolioName: "Landing Websites",
+          portfolioType: "Mobile Apps",
         },
       ],
       index: null,
     };
   },
+  mounted() {
+    this.allItems.push(...this.crm,...this.landing, ...this.mobile)
+  }
 };
 </script>
 

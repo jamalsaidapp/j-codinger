@@ -407,7 +407,7 @@ h6 {
   visibility: hidden;
   transition: 0.5s;
   transform: translateX(-100%);
-  position: absolute;
+  position: fixed;
   z-index: 99;
   top: 0;
   left: 0;
@@ -455,7 +455,7 @@ h6 {
   }
 }
 .shane_tm_mobile_menu .logo img {
-  max-width: 100px;
+  max-width: 158px;
 }
 .close_menu {
   position: absolute;
@@ -466,13 +466,13 @@ h6 {
   top: 15px;
   z-index: 5;
   &::after {
-    content: "";
-    position: absolute;
-    right: -22px;
-    bottom: 12px;
-    background-color: #fff;
-    width: 15px;
-    height: 2px;
+    //content: "";
+    //position: absolute;
+    //right: -22px;
+    //bottom: 12px;
+    //background-color: #fff;
+    //width: 15px;
+    //height: 2px;
   }
 }
 /*---------------------------------------------------*/
@@ -1916,7 +1916,8 @@ body.modal {
   left: 0px;
   right: 0px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.6);
+  //background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(105, 110, 135, 0.45);
 }
 
 .shane_tm_talk .shape {
@@ -1941,8 +1942,8 @@ body.modal {
   height: auto;
   clear: both;
   float: left;
-  background-color: #000;
-  padding: 50px 0px;
+  background-color: #696e87;
+  padding: 20px 0px;
 }
 .shane_tm_copyright .inner {
   width: 100%;
@@ -2199,7 +2200,7 @@ body.modal {
 }
 .loaded .home-four {
   .overlay_effect:after {
-    background-color: #003a55;
+    background-color: #696e87;
   }
   .overlay_effect:before {
     background-color: #fff;
@@ -3133,7 +3134,7 @@ body.intro .loader_line:after {
     overflow: hidden;
   }
   .shane_tm_topbar .topbar_inner .logo a img {
-    filter: brightness(0.5);
+    filter: brightness(0) invert(1);
   }
   .shane_tm_topbar .anchor_nav a {
     color: #fff;
@@ -3142,7 +3143,7 @@ body.intro .loader_line:after {
     color: #efefef;
   }
   .is-fixed .topbar_inner {
-    background-color: #bcbcbc;
+    background-color: #696e87;
     //padding: 25px 50px;
   }
   .shane_tm_topbar .topbar_inner {

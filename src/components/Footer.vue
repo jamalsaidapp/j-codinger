@@ -6,11 +6,11 @@
           <p>
             &copy; {{ new Date().getFullYear() }}
             <a
-              href="https://themeforest.net/user/ib-themes"
+              href="mailto:said.jamal@j-codinger.com"
               target="_blank"
               rel="noreferrer"
             >
-              ib-themes
+              SAID JAMAL
             </a>
             . All rights reserved.
           </p>

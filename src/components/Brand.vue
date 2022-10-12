@@ -34,20 +34,11 @@ export default {
         {
           src: require("../assets/img/partners/5.png"),
         },
-        {
-          src: require("../assets/img/partners/6.png"),
-        },
-        {
-          src: require("../assets/img/partners/7.png"),
-        },
-        {
-          src: require("../assets/img/partners/8.png"),
-        },
       ],
       hooperSettings: {
         infiniteScroll: true,
-        wheelControl: false,
-        autoPlay: false,
+        wheelControl: true,
+        autoPlay: true,
         mouseDrag: false,
         transition: 200,
         playSpeed: 1500,

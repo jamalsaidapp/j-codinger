@@ -8,13 +8,12 @@
             v-scroll-reveal="{ delay: 50, distance: '50px', duration: 1000 }"
           >
             <div class="shane_tm_title">
-              <h3>I have high skills in developing and programming</h3>
+              <h3>J'ai de grandes compétences en développement et en programmation</h3>
             </div>
             <div class="text">
               <p>
-                I am working on a professional, visually sophisticated and
-                technologically proficient, responsive and multi-functional
-                personal portfolio template Shane.
+                Je travaille sur un modèle de portfolio personnel professionnel, visuellement sophistiqué
+                et technologiquement compétent, réactif et multifonctionnel.
               </p>
             </div>
           </div>
@@ -31,7 +30,7 @@
                 }"
               >
                 <span>
-                  <span class="label">Web Development</span>
+                  <span class="label">Développement web</span>
                   <span class="number">95%</span>
                 </span>
                 <div class="background">
@@ -51,7 +50,7 @@
                 }"
               >
                 <span>
-                  <span class="label">Brand Identity</span>
+                  <span class="label">Développement Mobile Apps</span>
                   <span class="number">80%</span>
                 </span>
                 <div class="background">
@@ -71,7 +70,7 @@
                 }"
               >
                 <span>
-                  <span class="label">Logo Design</span>
+                  <span class="label">Création de Logos</span>
                   <span class="number">90%</span>
                 </span>
                 <div class="background">

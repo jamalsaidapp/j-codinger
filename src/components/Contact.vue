@@ -14,7 +14,7 @@
                   <input
                     v-model="formData.name"
                     type="text"
-                    placeholder="Name"
+                    placeholder="Nom Complete*"
                     autocomplete="off"
                   />
                   <span class="inpur-error">{{ errors[0] }}</span>
@@ -31,7 +31,7 @@
                     type="text"
                     rules="required|email"
                     v-model="formData.email"
-                    placeholder="email"
+                    placeholder="email*"
                   />
                   <span class="inpur-error">{{ errors[0] }}</span>
                 </li>
@@ -44,7 +44,7 @@
                 <li>
                   <textarea
                     v-model="formData.message"
-                    placeholder="Message"
+                    placeholder="Message*"
                   ></textarea>
                   <span class="inpur-error">{{ errors[0] }}</span>
                 </li>
@@ -53,7 +53,7 @@
           </div>
           <div class="tokyo_tm_button">
             <button type="submit" class="white-fill-bg fill-black">
-              Send Message
+              Envoyer le Message
             </button>
           </div>
         </form>
